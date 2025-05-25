@@ -1,60 +1,56 @@
 {
-  "id": "/app",
   "name": "Marmita Já",
-  "short_name": "MarmitaJá",
-  "start_url": "./index.html",
-  "scope": "./",
+  "short_name": "Marmita",
+  "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#000000",
-  "theme_color": "#008000",
+  "theme_color": "#00aa00",
   "description": "Peça sua Marmita Já diretamente do NOSSO RESTAURANTE!",
   "lang": "pt-BR",
   "dir": "ltr",
-  "categories": ["food", "restaurant", "delivery"],
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg",
+      "src": "./icon-512.png",
+      "type": "image/png",
       "sizes": "512x512",
-      "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg",
+      "src": "./icon-512-maskable.png",
+      "type": "image/png",
       "sizes": "512x512",
-      "type": "image/jpeg",
       "purpose": "maskable"
     }
   ],
+  "id": "/",
+  "scope": "/",
+  "categories": ["food", "restaurant", "delivery"],
   "launch_handler": {
-    "client_mode": "focus-existing"
+    "client_mode": "navigate-existing"
   },
-  "prefer_related_applications": false,
   "screenshots": [
     {
-      "src": "https://via.placeholder.com/540x720?text=Cardápio",
-      "sizes": "540x720",
-      "type": "image/png"
-    },
-    {
-      "src": "https://via.placeholder.com/540x720?text=Carrinho",
-      "sizes": "540x720",
-      "type": "image/png"
+      "src": "./screenshot1.jpg",
+      "type": "image/jpeg",
+      "sizes": "640x1136"
     }
   ],
-  "iarc_rating_id": "",
-  "scope_extensions": [],
+  "iarc_rating_id": "PENDING",
+  "prefer_related_applications": false,
   "related_applications": [],
-  "display_override": ["standalone", "fullscreen"],
-  "file_handlers": [],
-  "protocol_handlers": [],
-  "shortcuts": [],
-  "widgets": [],
-  "background": {
-    "service_worker": {
-      "src": "sw.js",
-      "scope": "/",
-      "type": "classic"
+  "shortcuts": [
+    {
+      "name": "Ver Cardápio",
+      "short_name": "Cardápio",
+      "url": "/#tela-cardapio",
+      "icons": [{ "src": "./icon-512.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Fazer Pedido",
+      "short_name": "Pedido",
+      "url": "/#tela-carrinho",
+      "icons": [{ "src": "./icon-512.png", "sizes": "192x192" }]
     }
-  }
+  ]
 }
