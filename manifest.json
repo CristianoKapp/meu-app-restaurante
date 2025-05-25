@@ -1,6 +1,6 @@
 {
   "name": "Marmita Já",
-  "short_name": "Marmita",
+  "short_name": "Marmita Já",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
@@ -10,19 +10,19 @@
   "dir": "ltr",
   "orientation": "portrait",
   "icons": [
-    {
-      "src": "./icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any"
-    },
-    {
-      "src": "./icon-512-maskable.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
-    }
-  ],
+  {
+    "src": "https://cristianokapp.github.io/meu-app-restaurante/icon-512.png",
+    "type": "image/png",
+    "sizes": "512x512",
+    "purpose": "any"
+  },
+  {
+    "src": "https://cristianokapp.github.io/meu-app-restaurante/icon-512-maskable.png",
+    "type": "image/png",
+    "sizes": "512x512",
+    "purpose": "maskable"
+  }
+],
   "id": "/",
   "scope": "/",
   "categories": ["food", "restaurant", "delivery"],
@@ -54,3 +54,4 @@
     }
   ]
 }
+
