@@ -10,21 +10,9 @@
   "icons": [
     {
       "src": "https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg",
-      "sizes": "192x192",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg",
       "sizes": "512x512",
       "type": "image/jpeg"
     }
-  ],
-  "screenshots": [
-    {
-      "src": "https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg",
-      "type": "image/jpeg",
-      "sizes": "500x500"
-    }
-  ],
-  "id": "/"
+  ]
 }
+
