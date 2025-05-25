@@ -1,18 +1,26 @@
 {
   "name": "Marmita Já",
   "short_name": "MarmitaJá",
-  "description": "Peça sua Marmita Já diretamente do NOSSO RESTAURANTE!",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#00a000",
   "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#008000",
+  "description": "Peça sua Marmita Já diretamente do NOSSO RESTAURANTE!",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "categories": ["food", "restaurant", "delivery"],
   "icons": [
     {
       "src": "https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/jpeg",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "prefer_related_applications": false
 }
-
