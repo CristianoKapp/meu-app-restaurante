@@ -1,0 +1,16 @@
+{
+  "name": "Marmita Já",
+  "short_name": "Marmita",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00A859",
+  "description": "Peça sua Marmita Já diretamente do NOSSO RESTAURANTE!",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
