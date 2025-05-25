@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MarmitaJá</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg" alt="Logo do Restaurante" class="logo-restaurante" />
+  </div>
+  <h1>Nome do Restaurante Exemplo</h1>
+</header>
+
+<nav id="menu-principal">
+  <button data-tela="tela-cardapio">Cardápio</button>
+  <button data-tela="tela-carrinho">Carrinho</button>
+  <button data-tela="tela-info-restaurante">Informações</button>
+</nav>
+
+<main>
+  <!-- Tela Cardápio -->
+  <section id="tela-cardapio" class="tela ativa">
+    <h2>Nosso Cardápio do Dia</h2>
+
+    <div class="categoria">
+      <h3>Pratos Principais / Marmitas</h3>
+
+      <article class="produto-card">
+        <img src="https://i.postimg.cc/gJRCtpFM/Marmita-P.jpg" alt="Marmita Pequena" class="produto-imagem" />
+        <div class="produto-info">
+          <h4 class="produto-nome">Marmita Tradicional (Pequena)</h4>
+          <p class="produto-descricao-curta">Arroz, feijão, uma carne e salada.</p>
+          <p class="produto-preco">R$ 15,00</p>
+          <button class="btn-principal btn-grande btn-ver-detalhes" data-itemid="marmitaP">Ver Detalhes</button>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <img src="https://i.postimg.cc/Kj2ddWmm/Marmita-M.jpg" alt="Marmita Média" class="produto-imagem" />
+        <div class="produto-info">
+          <h4 class="produto-nome">Marmita Tradicional (Média)</h4>
+          <p class="produto-descricao-curta">Arroz, feijão, uma carne, acompanhamento e salada.</p>
+          <p class="produto-preco">R$ 18,00</p>
+          <button class="btn-principal btn-grande btn-ver-detalhes" data-itemid="marmitaM">Ver Detalhes</button>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <img src="https://i.postimg.cc/tRd0h9zJ/Marmita-G.jpg" alt="Marmita Grande" class="produto-imagem" />
+        <div class="produto-info">
+          <h4 class="produto-nome">Marmita Tradicional (Grande)</h4>
+          <p class="produto-descricao-curta">Arroz, feijão, duas carnes, acompanhamento e salada.</p>
+          <p class="produto-preco">R$ 22,00</p>
+          <button class="btn-principal btn-grande btn-ver-detalhes" data-itemid="marmitaG">Ver Detalhes</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="categoria">
+      <h3>Bebidas</h3>
+
+      <article class="produto-card">
+        <img src="https://i.postimg.cc/6pbxyzfh/Refrigerante.jpg" alt="Refrigerante Lata" class="produto-imagem" />
+        <div class="produto-info">
+          <h4 class="produto-nome">Refrigerante Lata (350ml)</h4>
+          <p class="produto-descricao-curta">Sabores: Coca, Guaraná, Pepsi.</p>
+          <p class="produto-preco">R$ 5,00</p>
+          <button class="btn-principal btn-grande btn-adicionar-carrinho" data-itemid="refriLata">Adicionar</button>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <img src="https://i.postimg.cc/zGG1z4KB/Cerveja.jpg" alt="Cerveja" class="produto-imagem" />
+        <div class="produto-info">
+          <h4 class="produto-nome">Cervejas</h4>
+          <p class="produto-descricao-curta">Ex: Skol, Brahma, Heineken...</p>
+          <p class="produto-preco">R$ 7,00</p>
+          <button class="btn-principal btn-grande btn-adicionar-carrinho" data-itemid="cerveja">Adicionar</button>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <img src="https://i.postimg.cc/jjGVh59w/Agua.jpg" alt="Água Mineral" class="produto-imagem" />
+        <div class="produto-info">
+          <h4 class="produto-nome">Água Mineral</h4>
+          <p class="produto-descricao-curta">Com gás ou sem gás.</p>
+          <p class="produto-preco">R$ 3,00</p>
+          <button class="btn-principal btn-grande btn-adicionar-carrinho" data-itemid="agua">Adicionar</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Tela Detalhes do Item -->
+  <section id="tela-detalhes-item" class="tela">
+    <h2>Detalhes do Item</h2>
+    <div id="detalhes-content">
+      <img src="" alt="" id="detalhe-imagem" />
+      <h3 id="detalhe-nome"></h3>
+      <p id="detalhe-descricao-longa"></p>
+      <p id="detalhe-preco"></p>
+      <p id="detalhe-ingredientes"></p>
+      <button class="btn-principal btn-grande btn-adicionar-carrinho-detalhe">Adicionar ao Carrinho</button>
+      <button class="btn-secundario btn-voltar-cardapio">Voltar ao Cardápio</button>
+    </div>
+  </section>
+
+  <!-- Tela Carrinho -->
+  <section id="tela-carrinho" class="tela">
+    <h2>Seu Carrinho</h2>
+    <div id="carrinho-itens">
+      <p>Seu carrinho está vazio.</p>
+    </div>
+    <p><strong>Total:</strong> R$ <span id="carrinho-total">0,00</span></p>
+    <!-- Formulário de finalização será adicionado via JavaScript -->
+  </section>
+
+  <!-- Tela Informações -->
+  <section id="tela-info-restaurante" class="tela">
+    <h2>Informações do Restaurante</h2>
+    <p><strong>Endereço:</strong> Rua Exemplo, 123</p>
+    <p><strong>Contato:</strong> (00) 00000-0000</p>
+    <p><strong>Horário:</strong> Seg-Sáb, das 10h às 14h30</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Nome do Restaurante. Todos os direitos reservados.</p>
+</footer>
+<!-- partial -->
+  <script src='https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js'></script>
+<script src='https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
