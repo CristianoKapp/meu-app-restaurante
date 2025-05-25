@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>MarmitaJá</title>
+  <title>Marmita Já</title>
   <link rel="stylesheet" href="./style.css">
-
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <header>
   <div class="logo-container">
     <img src="https://i.postimg.cc/WbjvKd40/Logotipo-para-restaurante.jpg" alt="Logo do Restaurante" class="logo-restaurante" />
@@ -124,16 +123,33 @@
     <h2>Informações do Restaurante</h2>
     <p><strong>Endereço:</strong> Rua Exemplo, 123</p>
     <p><strong>Contato:</strong> (00) 00000-0000</p>
-    <p><strong>Horário:</strong> Seg-Sáb, das 10h às 14h30</p>
+    <p><strong>Horário de funcionamento:</strong> Seg-Sáb, das 10h às 14h30</p>
+    <p><strong>Pedidos:</strong> apenas de segunda a sábado, das 10:30 às 13:30</p>
   </section>
 </main>
 
 <footer>
   <p>&copy; 2025 Nome do Restaurante. Todos os direitos reservados.</p>
 </footer>
-<!-- partial -->
-  <script src='https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js'></script>
-<script src='https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js'></script><script  src="./script.js"></script>
 
+<!-- Firebase e script do app -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="./script.js"></script>
+
+<!-- Registro do service worker para PWA -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js')
+        .then(function (registration) {
+          console.log('Service Worker registrado com sucesso:', registration.scope);
+        })
+        .catch(function (error) {
+          console.log('Erro ao registrar o Service Worker:', error);
+        });
+    });
+  }
+</script>
 </body>
 </html>
